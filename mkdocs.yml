@@ -1,0 +1,20 @@
+site_name: Kotlin Companion
+
+theme:
+  name: 'material'
+  language: 'pt'
+  logo: 'images/kotlin-development-logo.svg'
+nav:
+- Home: 'index.md'
+- Básico:
+    - 'O que é Kotlin?': 'o-que-e-kotlin.md'
+    - 'Tipo Básicos': 'tipos-basicos.md'
+    - 'Estruturas de decisão': 'estruturas-de-decisao.md'
+    - 'Estruturas de repeticão': 'estruturas-de-repeticao.md'
+    - 'Funcões': 'funcoes.md'
+    - 'Orientação a Objetos': 'orientacao-objetos.md'
+
+repo_name: 'leoallvez/kotlin-companion'
+repo_url: 'https://github.com/leoallvez/kotlin-companion/'
+theme_dir: mkdocs-material/material
+    
