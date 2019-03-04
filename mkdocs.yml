@@ -14,8 +14,8 @@ nav:
     - 'Funcões': 'funcoes.md'
     - 'Orientação a Objetos': 'orientacao-objetos.md'
 
-repo_name: 'kotlin-companion'
-repo_url: 'https://kotlin-companion.github.io/'
+repo_name: 'kotlin-companion/kotlin-companion.github.io'
+repo_url: 'https://github.com/kotlin-companion/kotlin-companion.github.io'
 theme_dir: mkdocs-material/material
 
 markdown_extensions:

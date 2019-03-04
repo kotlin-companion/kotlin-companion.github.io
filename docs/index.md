@@ -1,5 +1,3 @@
-# Sobre 
-
 ##Objetivos
 
 Kotlin Companion tem como principal objetivo ser um compêndio de [kotlin](https://kotlinlang.org) em português.
