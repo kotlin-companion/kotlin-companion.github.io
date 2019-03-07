@@ -2,7 +2,7 @@
 
 ## A linguagem
 
-Kotlin é uma linguagem de programação [Open Souce](https://github.com/JetBrains/kotlin), multiplataforma desenvolvida pela [JetBrains](https://www.jetbrains.com) famosa por suas IDEs, e assim como o Java é compilada para bytecodes que são interpretados pela JVM (Java Virtual Machine). 
+Kotlin é uma linguagem de programação [Open Souce](https://github.com/JetBrains/kotlin), multiplataforma desenvolvida pela [JetBrains](https://www.jetbrains.com) famosa por suas IDEs, assim como o Java é compilada para bytecodes que são interpretados pela JVM (Java Virtual Machine). 
 
 Kotlin combina os paradigmas de orientação a objetos e de programação funcional. Pode ser 
 [compilada para javascript](https://kotlinlang.org/docs/tutorials/javascript/kotlin-to-javascript/kotlin-to-javascript.html), assim com também existe o [Kotlin/Native](https://kotlinlang.org/docs/reference/native-overview.html) que permite criar binários nativos para o sistema operaciona alvo que são execultados sem o uso de maquina virtual.
@@ -49,3 +49,5 @@ Kotlin protege você de operar incorretamente em tipos nullable.
 ###Interoperável
 Kotlin é 100% interoperal com o java. Isso significa que podemos usar qualquer Classe ou API implementada em Java sem nenhum problema.
 Isso é graças ao fato do Kotlin gerar os mesmo bytescodes da JVM Java.
+
+
