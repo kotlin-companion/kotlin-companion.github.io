@@ -8,13 +8,12 @@ Kotlin combina os paradigmas de orientação a objetos e de programação funcio
 [compilada para javascript](https://kotlinlang.org/docs/tutorials/javascript/kotlin-to-javascript/kotlin-to-javascript.html), assim com também existe o [Kotlin/Native](https://kotlinlang.org/docs/reference/native-overview.html) que permite criar binários nativos para o sistema operaciona alvo que são execultados sem o uso de maquina virtual.
 ## Um breve histórico
 
-| Ano      | Acontecimentos                                                                |
-| ---------| :-----------------------------------------------------------------------------|
-| **2010** | JetBrains inicia o projeto Kotlin                                             |
-| **2011** | Durante a JVM Language Submit a JetBrains revela a implenetação do Kotlin     |
-| **2012** | Kotlin foi colocado sob a licença Apache de código aberto.                    |
-| **2016** | Foi lançada a versão 1.0 a primeira estável da linguagem.                     |
-| **2017** | No Google I/O foi anunciada como linguagem oficial de desenvolvimento Android.|
+
+- **2010**  JetBrains inicia o projeto Kotlin                                             
+- **2011**  Durante a JVM Language Submit a JetBrains revela a implenetação do Kotlin     
+- **2012**  Kotlin foi colocado sob a licença Apache de código aberto.                    
+- **2016**  Foi lançada a versão 1.0 a primeira estável da linguagem.                     
+- **2017**  No Google I/O foi anunciada como linguagem oficial de desenvolvimento Android.
 
 !!! note " Anuncio de Kotlin como liguagem oficial para Android"
 
@@ -34,10 +33,19 @@ Já em Kotlin a mesma a classe seria implementada da seguinte forma:
 !!! info "Observação"
     Num primeiro momento parece que aos métodos getters e setters não existem na classe, quando na verdade eles estão implicitos na mesma..
 
-<script src="https://gist.github.com/leoallvez/e2573f158dbde4b57688ced61434962b.js"></script>
+<!--<script src="https://gist.github.com/leoallvez/e2573f158dbde4b57688ced61434962b.js"></script>-->
 
-###Segura
+###Segura de referência nulas
+
+Em Kotlin por default todo objeto e variável **não pode** ter valor nulo.
+<script src="https://gist.github.com/leoallvez/2e319fee0eda4570550aa4951785ccf6.js"></script>
+
+Kotlin protege você de operar incorretamente em tipos nullable.
+<script src="https://gist.github.com/leoallvez/3e4a97359c2f6a1e0bab37c183c4378e.js"></script>
+
+!!! note "Nota"
+    Um NullPointerException é uma exceção lançada quando um programa tenta acessar uma variável ou objeto de memória que não foi instanciado (ou melhor, inicializado) até o momento de sua chamada. Ou seja o objeto ainda está nulo e não tem um valor definido.
 
 ###Interoperável
-Além disso ela é  totalmente focada em interoperabilidade com o java. Isso significa que podemos mistura java com Kotlin sem nenhum problema.
-Kotlin gera os mesmo bytescodes da JVM Java.
+Kotlin é 100% interoperal com o java. Isso significa que podemos usar qualquer Classe ou API implementada em Java sem nenhum problema.
+Isso é graças ao fato do Kotlin gerar os mesmo bytescodes da JVM Java.
