@@ -31,9 +31,7 @@ Já em Kotlin a mesma a classe seria implementada da seguinte forma:
 
 
 !!! info "Observação"
-    Num primeiro momento parece que aos métodos getters e setters não existem na classe, quando na verdade eles estão implicitos na mesma..
-
-<!--<script src="https://gist.github.com/leoallvez/e2573f158dbde4b57688ced61434962b.js"></script>-->
+    Num primeiro momento parece que aos métodos getters e setters não existem na classe, quando na verdade eles estão implicitos na mesma.
 
 ###Segura de referência nulas
 
@@ -42,6 +40,10 @@ Em Kotlin por default todo objeto e variável **não pode** ter valor nulo.
 
 Kotlin protege você de operar incorretamente em tipos nullable.
 <script src="https://gist.github.com/leoallvez/3e4a97359c2f6a1e0bab37c183c4378e.js"></script>
+
+Podemos usar uma chamada segura (safe call) que impede o um erro de referência nula(NullPointerException).
+<script src="https://gist.github.com/leoallvez/46a2e6e41b764eed1898742bd53b0683.js"></script>
+Apesar de a váriavel **sobreNome** ser nula, não havera um erro ao chamar a propriedade **lenght**.
 
 !!! note "Nota"
     Um NullPointerException é uma exceção lançada quando um programa tenta acessar uma variável ou objeto de memória que não foi instanciado (ou melhor, inicializado) até o momento de sua chamada. Ou seja o objeto ainda está nulo e não tem um valor definido.
@@ -52,5 +54,7 @@ Isso é graças ao fato do Kotlin gerar os mesmo bytescodes da JVM Java.
 
 <script src="https://gist.github.com/leoallvez/247eacc9965a72e10c359b1e7e5d85b5.js"></script>
 
-A classe Java pode ser usada no código Kotin.
+Podemos então ter uma instância da classe **Carro.java** no código Kotin.
 <script src="https://gist.github.com/leoallvez/851e201fc6f7fe0ea308f9aba86d6839.js"></script>
+![Suprise](images/suprise.jpg)
+**Mágia pura!**
