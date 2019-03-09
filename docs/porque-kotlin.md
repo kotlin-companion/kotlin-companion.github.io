@@ -50,4 +50,7 @@ Kotlin protege você de operar incorretamente em tipos nullable.
 Kotlin é 100% interoperal com o java. Isso significa que podemos usar qualquer Classe ou API implementada em Java sem nenhum problema.
 Isso é graças ao fato do Kotlin gerar os mesmo bytescodes da JVM Java.
 
+<script src="https://gist.github.com/leoallvez/247eacc9965a72e10c359b1e7e5d85b5.js"></script>
 
+A classe Java pode ser usada no código Kotin.
+<script src="https://gist.github.com/leoallvez/851e201fc6f7fe0ea308f9aba86d6839.js"></script>
