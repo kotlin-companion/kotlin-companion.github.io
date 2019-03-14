@@ -31,7 +31,7 @@ Já em Kotlin a mesma a classe seria implementada da seguinte forma:
 
 
 !!! info "Observação"
-    Num primeiro momento parece que aos métodos getters e setters não existem na classe, quando na verdade eles estão implicitos na mesma.
+    Em um primeiro momento parece que os métodos getters e setters não existem na classe, quando na verdade eles estão implicitos na mesma.
 
 ###Segura de referência nulas
 

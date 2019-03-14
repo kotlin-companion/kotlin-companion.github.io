@@ -8,7 +8,7 @@ nav:
 - Home: 'index.md'
 - Básico:
     - 'Porquê Kotlin?': 'porque-kotlin.md'
-    - 'Tipo Básicos': 'tipos-basicos.md'
+    - 'Tipos Básicos': 'tipos-basicos.md'
     - 'Estruturas de decisão': 'estruturas-de-decisao.md'
     - 'Estruturas de repeticão': 'estruturas-de-repeticao.md'
     - 'Funcões': 'funcoes.md'
