@@ -1,6 +1,6 @@
-Em Kotlin, o sistema de tipos distingue entre referências que podem conter nulas e as que não podem. Uma variável ou propriedade não podem conter nulo por default:
+Em Kotlin, o sistema de tipos distingue entre referências que podem conter nulas e as que não podem. Uma variável ou propriedade não podem conter valor nulo por default:
 <script src="https://gist.github.com/leoallvez/c52359fabad8c240a9a1f9c836b150c3.js"></script>
-Para permitir nulos, devemos declarar uma variável como string **nullable** de forma explicita:
+Para permitir valores nulos, devemos declarar uma variável como **nullable** de forma explicita:
 <script src="https://gist.github.com/leoallvez/ee132bc32f439d665c27e48e987dfe18.js"></script>
 
 ###Strings
@@ -16,7 +16,7 @@ Já o operador **===** verifica igualdade referencial e **!==** é a sua contra 
 !!! note "Nota"
     Para valores que são representados como tipos primitivos no tempo de execução (por exemplo, o tipo Int), a verificação da igualdade **===** é equivalente à verificação **==** de verificação.
 
-String são um conjutos de caracteres que podem ser acessados ​​por index.
+ Assim como em outras linguagens strings são um conjutos de caracteres que podem ser acessados ​​por index.
 <script src="https://gist.github.com/leoallvez/0667ee05a395e270e3698d58ba36398c.js"></script>
 Os elementos de uma string podem ser iterados com um loop.
 <script src="https://gist.github.com/leoallvez/a931f839e7c191d1540bd3817d0918ac.js"></script>
