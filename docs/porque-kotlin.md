@@ -2,15 +2,13 @@
 
 ## A linguagem
 
-Kotlin é uma linguagem de programação [Open Souce](https://github.com/JetBrains/kotlin), multiplataforma desenvolvida pela [JetBrains](https://www.jetbrains.com) famosa por suas IDEs, assim como o Java é compilada para bytecodes que são interpretados pela JVM (Java Virtual Machine). 
+[Kotlin](https://github.com/JetBrains/kotlin) é uma linguagem de programação open souce, multiplataforma desenvolvida pela [JetBrains](https://www.jetbrains.com) famosa por suas IDEs, ela assim como o Java é compilada para bytecodes que são interpretados pela JVM (Java Virtual Machine). 
 
-Kotlin combina os paradigmas de orientação a objetos e de programação funcional. Pode ser 
-[compilada para javascript](https://kotlinlang.org/docs/tutorials/javascript/kotlin-to-javascript/kotlin-to-javascript.html), assim com também existe o [Kotlin/Native](https://kotlinlang.org/docs/reference/native-overview.html) que permite criar binários nativos para o sistema operaciona alvo que são execultados sem o uso de maquina virtual.
+Kotlin combina os paradigmas de orientação a objetos e programação funcional. E pode ser 
+[compilada para javascript](https://kotlinlang.org/docs/tutorials/javascript/kotlin-to-javascript/kotlin-to-javascript.html), assim como existe também o [Kotlin/Native](https://kotlinlang.org/docs/reference/native-overview.html) da qual permite a criação de binários nativos para sistemas operacionais como: iOS, MacOS, Windows e Linux. E esses binários são execultados sem o uso da JVM.
 ## Um breve histórico
-
-
 - **2010**  JetBrains inicia o projeto Kotlin                                             
-- **2011**  Durante a JVM Language Submit a JetBrains revela a implenetação do Kotlin     
+- **2011**  Durante a JVM Language Submit a JetBrains revela a implementação do Kotlin     
 - **2012**  Kotlin foi colocado sob a licença Apache de código aberto.                    
 - **2016**  Foi lançada a versão 1.0 a primeira estável da linguagem.                     
 - **2017**  No Google I/O foi anunciada como linguagem oficial de desenvolvimento Android.
@@ -22,7 +20,7 @@ Kotlin combina os paradigmas de orientação a objetos e de programação funcio
 ## Características
 
 ### Concisa
-É concisa, pois em relação ao Java temos uma redução significativa na quantidade de código.
+Pois em relação ao Java temos uma redução significativa na quantidade e legibilidade de código.
 Exemplo, imagine uma classe chamada livro com apenas dois atributos, autor e título, em Java ela ficaria assim:
 
 <script src="https://gist.github.com/leoallvez/80581e58a4441069c59649d13a939cdc.js"></script>
@@ -31,7 +29,7 @@ Já em Kotlin a mesma a classe seria implementada da seguinte forma:
 
 
 !!! info "Observação"
-    Em um primeiro momento parece que os métodos getters e setters não existem na classe, quando na verdade eles estão implicitos na mesma.
+    Em um primeiro momento, pode parecer que os métodos getters e setters não existem na classe livro, mas na verdade eles estão implícito na mesma.
 
 ###Segura de referência nulas
 
@@ -46,11 +44,11 @@ Podemos usar uma chamada segura (safe call) que impede o um erro de referência 
 Apesar de a váriavel **sobreNome** ser nula, não havera um erro ao chamar a propriedade **lenght**.
 
 !!! note "Nota"
-    Um NullPointerException é uma exceção lançada quando um programa tenta acessar uma variável ou objeto de memória que não foi instanciado (ou melhor, inicializado) até o momento de sua chamada. Ou seja o objeto ainda está nulo e não tem um valor definido.
+    Um NullPointerException é uma exceção lançada quando um programa tenta acessar uma variável ou objeto de memória que não foi instanciado (ou melhor, inicializado) até o momento de sua chamada. Ou seja, o objeto ainda está nulo e não tem um valor definido.	
 
 ###Interoperável
-Kotlin é 100% interoperal com o java. Isso significa que podemos usar qualquer Classe ou API implementada em Java sem nenhum problema.
-Isso é graças ao fato do Kotlin gerar os mesmo bytescodes da JVM Java.
+Kotlin é 100% interoperável com o Java. Isso significa que podemos usar qualquer classe ou API que foi implementada em Java sem o menor problema.
+Isso é graças ao fato do Kotlin gerar os mesmos bytescodes da JVM Java.
 
 <script src="https://gist.github.com/leoallvez/247eacc9965a72e10c359b1e7e5d85b5.js"></script>
 
