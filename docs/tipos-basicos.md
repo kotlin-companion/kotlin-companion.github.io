@@ -1,6 +1,45 @@
+Em Kotlin, tudo é objeto no sentido de que qualquer variável possui propriedades e métodos. 
+Alguns tipos podem ter uma representação interna especial - por exemplo, números, caracteres e booleanos podem ser representados como valores primitivos em tempo de execução, mas para o usuário eles parecem com classes comuns. Nesta seção, descrevemos os tipos básicos usados ​​no Kotlin: números, caracteres, booleanos, matrizes e strings.
+###Números
+Kotlin manipula os números de maneira muito semelhante a do Java, a principal diferença é que todos os tipos são objetos, como já tido acima.
+O Kotlin fornece os seguintes tipos que representam números:
+
+|Tipo    |Bit|
+| -------|:--|
+| Double |64 |
+| Float  |32 |
+| Long   |64 |
+| Int    |32 |
+| Short  |16 |
+| Byte   |8  |
+
+
+####Underline em váriaveis númericas 
+
+Podemos usar _underline_ para tornar os valores numéricos mais legíveis.
+<script src="https://gist.github.com/leoallvez/4d84fe66d410e68837efc59788580599.js"></script>
+
+####Conversões
+Tipos menores não são subtipos de maiores. Se eles fossem, teríamos o seguinte problema.
+<script src="https://gist.github.com/leoallvez/9b7da06626f26ab07fa9bd9a67451888.js"></script>
+Tipo menores **não** são implicitamente convertidos em tipos maiores. Isso significa que não podemos atribuir um valor do tipo Byte a uma variável Int sem uma conversão explícita.
+<script src="https://gist.github.com/leoallvez/27f10bf96729fa931c9385dc15b4f165.js"></script>
+Podemos usar conversões explícitas para ampliar os números
+<script src="https://gist.github.com/leoallvez/4a11f3e3f1e16e4dc0a25136cd157f32.js"></script>
+
+Cada tipo de númerico suporta os seguintes os metódos conversão.
+
+- toByte (): Byte
+- toShort (): Short
+- toInt (): Int
+- toLong (): Long
+- toFloat (): Float
+- toDouble (): Double
+- toChar (): Char
+
 Em Kotlin, o sistema de tipos distingue entre referências que podem conter nulas ou não. Uma variável ou propriedade não podem conter valor nulo por default.
 <script src="https://gist.github.com/leoallvez/c52359fabad8c240a9a1f9c836b150c3.js"></script>
-Para permitir valores nulos, nós devemos declarar a variável como **nullable** explicitamente.
+Para permitir valores nulos, nós devemos declarar a variável como _nullable_ explicitamente.
 <script src="https://gist.github.com/leoallvez/ee132bc32f439d665c27e48e987dfe18.js"></script>
 
 ###Strings
@@ -26,10 +65,4 @@ Começa com um sinal de dólar **$** e consiste em um nome variável.
 Para acessar valores de propriedade ou métodos de objetos devemos usar chaves.
 <script src="https://gist.github.com/leoallvez/2b37c9facb9a705f8a4fa51b6db16af8.js"></script>
 
-| Ano      | Acontecimentos                                                                |
-| ---------| :-----------------------------------------------------------------------------|
-| **2010** | JetBrains inicia o projeto Kotlin                                             |
-| **2011** | Durante a JVM Language Submit a JetBrains revela a implenetação do Kotlin     |
-| **2012** | Kotlin foi colocado sob a licença Apache de código aberto.                    |
-| **2016** | Foi lançada a versão 1.0 a primeira estável da linguagem.                     |
-| **2017** | No Google I/O foi anunciada como linguagem oficial de desenvolvimento Android.|
+
