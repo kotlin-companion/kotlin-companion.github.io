@@ -9,3 +9,5 @@ Kotlin Companion tem como objetivo ser um documento auxiliar de [kotlin](https:/
 
 ##Autor
 [Leonardo Pereira Alves](http://leoallvez.github.io)
+
+<iframe src="https://pl.kotl.in/JlS24xrHV"></iframe>
