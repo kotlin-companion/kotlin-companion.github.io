@@ -4,7 +4,7 @@ Nesta seção, descrevemos os tipos básicos usados ​​no Kotlin: números, c
 Kotlin manipula os números de maneira muito semelhante a do Java, e possuem tamanhos limitados, esses limites dependem da quantidade de bits que cada tipo númerico oculpa em memória.
 O Kotlin fornece os seguintes tipos que representam números:
 
-|Tipo    |Bit|Valor Minimo        |Valor Máximo        |
+|Tipo    |Bit|Valor Mínimo        |Valor Máximo        |
 | -------|:--|:-------------------|:-------------------|
 | Long   |64 |-9223372036854775808|9223372036854775807 |
 | Int    |32 |-2147483648         |2147483647          |
@@ -13,10 +13,10 @@ O Kotlin fornece os seguintes tipos que representam números:
 
 Os números de ponto flutuante vêm em dois tipos, dependendo de quantos dígitos você precisa. Se você precisar de maior precisão ou trabalhar com quantias monetárias (ou outras situações em que você deve ter resultados exatos), use o tipo não primitivo BigDecimal.
 
-|Tipo    |Bit| Observações                   |
+|Tipo    |Bit| Quantidade de dígitos         |
 | -------|:--|:------------------------------|
-| Double |64 | 16-17 dígitos significativos  |
-| Float  |32 | 6-7 dígitos significativos    |
+| Double |64 | 16-17                         |
+| Float  |32 | 6-7                           |
 
 
 ####Underline
@@ -63,10 +63,9 @@ Tipos booleanos são definidos como Boolean, e podem ter apenas dois valores tru
 | OU     | II     |
 | Não    | !      |
 
-####Metodos da classe Boolean.
-A classe Boolean possui métodos para essas operações, o que tornam a sintax ainda mais legivel.
+####Métodos da classe Boolean.
+A classe Boolean possui métodos para essas operações, o que tornam a sintax mais legível.
 <script src="https://gist.github.com/leoallvez/ca7aa4a97250c8d1a141d58ccd0da68e.js"></script>
-
 
 ###Arrays
 
