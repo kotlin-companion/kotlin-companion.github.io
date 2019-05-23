@@ -353,8 +353,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../tipos-basicos/" title="Tipo Básicos" class="md-nav__link">
-      Tipo Básicos
+    <a href="../tipos-basicos/" title="Tipos Básicos" class="md-nav__link">
+      Tipos Básicos
     </a>
   </li>
 
@@ -501,13 +501,13 @@
                 
                 <h1 id="porque-kotlin">Porquê Kotlin?<a class="headerlink" href="#porque-kotlin" title="Permanent link">&para;</a></h1>
 <h2 id="a-linguagem">A linguagem<a class="headerlink" href="#a-linguagem" title="Permanent link">&para;</a></h2>
-<p>Kotlin é uma linguagem de programação <a href="https://github.com/JetBrains/kotlin">Open Souce</a>, multiplataforma desenvolvida pela <a href="https://www.jetbrains.com">JetBrains</a> famosa por suas IDEs, assim como o Java é compilada para bytecodes que são interpretados pela JVM (Java Virtual Machine). </p>
-<p>Kotlin combina os paradigmas de orientação a objetos e de programação funcional. Pode ser 
-<a href="https://kotlinlang.org/docs/tutorials/javascript/kotlin-to-javascript/kotlin-to-javascript.html">compilada para javascript</a>, assim com também existe o <a href="https://kotlinlang.org/docs/reference/native-overview.html">Kotlin/Native</a> que permite criar binários nativos para o sistema operaciona alvo que são execultados sem o uso de maquina virtual.</p>
+<p><a href="https://github.com/JetBrains/kotlin">Kotlin</a> é uma linguagem de programação open souce, multiplataforma desenvolvida pela <a href="https://www.jetbrains.com">JetBrains</a> famosa por suas IDEs, ela assim como o Java é compilada para bytecodes que são interpretados pela JVM (Java Virtual Machine). </p>
+<p>Kotlin combina os paradigmas de orientação a objetos e programação funcional. E pode ser 
+<a href="https://kotlinlang.org/docs/tutorials/javascript/kotlin-to-javascript/kotlin-to-javascript.html">compilada para javascript</a>, assim como existe também o <a href="https://kotlinlang.org/docs/reference/native-overview.html">Kotlin/Native</a> da qual permite a criação de binários nativos para sistemas operacionais como: iOS, MacOS, Windows e Linux. E esses binários são execultados sem o uso da JVM.</p>
 <h2 id="um-breve-historico">Um breve histórico<a class="headerlink" href="#um-breve-historico" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>2010</strong>  JetBrains inicia o projeto Kotlin                                             </li>
-<li><strong>2011</strong>  Durante a JVM Language Submit a JetBrains revela a implenetação do Kotlin     </li>
+<li><strong>2011</strong>  Durante a JVM Language Submit a JetBrains revela a implementação do Kotlin     </li>
 <li><strong>2012</strong>  Kotlin foi colocado sob a licença Apache de código aberto.                    </li>
 <li><strong>2016</strong>  Foi lançada a versão 1.0 a primeira estável da linguagem.                     </li>
 <li><strong>2017</strong>  No Google I/O foi anunciada como linguagem oficial de desenvolvimento Android.</li>
@@ -518,15 +518,20 @@
 </div>
 <h2 id="caracteristicas">Características<a class="headerlink" href="#caracteristicas" title="Permanent link">&para;</a></h2>
 <h3 id="concisa">Concisa<a class="headerlink" href="#concisa" title="Permanent link">&para;</a></h3>
-<p>É concisa, pois em relação ao Java temos uma redução significativa na quantidade de código.
-Exemplo, imagine uma classe chamada livro com apenas dois atributos, autor e título, em Java ela ficaria assim:</p>
+<p>Pois em relação ao Java temos uma redução significativa na quantidade e legibilidade de código.
+Kotlin tem muito menos <em>boilerplate code</em> do que o Java. </p>
+<div class="admonition info">
+<p class="admonition-title">Boilerplate code</p>
+<p><em>Boilerplate</em> é um termo muito utilizado para se referir a trechos de documentos (por exemplo jurídicos) que são sempre os mesmos, de documento pra documento, de modo que não acrescentam muita coisa mas mesmo assim não podem ser omitidos. Você já deve ter visto em licenças de software, por exemplo, a parte que diz que "NÃO HÁ NENHUMA GARANTIA PARA O PROGRAMA, NO LIMITE PERMITIDO PELA LEI APLICÁVEL. EXCETO QUANDO..." etc. Todo mundo já conhece, ninguém nem lê porque já sabe de cor o que está escrito, mas o documento não estaria completo sem ela.</p>
+</div>
+<p>Exemplo, imagine uma classe chamada livro com apenas dois atributos, autor e título, em Java ela ficaria assim:</p>
 <script src="https://gist.github.com/leoallvez/80581e58a4441069c59649d13a939cdc.js"></script>
 
 <p>Já em Kotlin a mesma a classe seria implementada da seguinte forma:
 <script src="https://gist.github.com/leoallvez/444da6496884b0f8c511e2424abd20bb.js"></script></p>
 <div class="admonition info">
 <p class="admonition-title">Observação</p>
-<p>Num primeiro momento parece que aos métodos getters e setters não existem na classe, quando na verdade eles estão implicitos na mesma.</p>
+<p>Em um primeiro momento, pode parecer que os métodos getters e setters não existem na classe livro, mas na verdade eles estão implícito na mesma.</p>
 </div>
 <h3 id="segura-de-referencia-nulas">Segura de referência nulas<a class="headerlink" href="#segura-de-referencia-nulas" title="Permanent link">&para;</a></h3>
 <p>Em Kotlin por default todo objeto e variável <strong>não pode</strong> ter valor nulo.
@@ -538,11 +543,11 @@ Exemplo, imagine uma classe chamada livro com apenas dois atributos, autor e tí
 Apesar de a váriavel <strong>sobreNome</strong> ser nula, não havera um erro ao chamar a propriedade <strong>lenght</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Um NullPointerException é uma exceção lançada quando um programa tenta acessar uma variável ou objeto de memória que não foi instanciado (ou melhor, inicializado) até o momento de sua chamada. Ou seja o objeto ainda está nulo e não tem um valor definido.</p>
+<p>Um NullPointerException é uma exceção lançada quando um programa tenta acessar uma variável ou objeto de memória que não foi instanciado (ou melhor, inicializado) até o momento de sua chamada. Ou seja, o objeto ainda está nulo e não tem um valor definido. </p>
 </div>
 <h3 id="interoperavel">Interoperável<a class="headerlink" href="#interoperavel" title="Permanent link">&para;</a></h3>
-<p>Kotlin é 100% interoperal com o java. Isso significa que podemos usar qualquer Classe ou API implementada em Java sem nenhum problema.
-Isso é graças ao fato do Kotlin gerar os mesmo bytescodes da JVM Java.</p>
+<p>Kotlin é 100% interoperável com o Java. Isso significa que podemos usar qualquer classe ou API que foi implementada em Java sem o menor problema.
+Isso é graças ao fato do Kotlin gerar os mesmos bytescodes da JVM Java.</p>
 <script src="https://gist.github.com/leoallvez/247eacc9965a72e10c359b1e7e5d85b5.js"></script>
 
 <p>Podemos então ter uma instância da classe <strong>Carro.java</strong> no código Kotin.
@@ -584,13 +589,13 @@ Isso é graças ao fato do Kotlin gerar os mesmo bytescodes da JVM Java.</p>
           </a>
         
         
-          <a href="../tipos-basicos/" title="Tipo Básicos" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../tipos-basicos/" title="Tipos Básicos" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Próximo
                 </span>
-                Tipo Básicos
+                Tipos Básicos
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

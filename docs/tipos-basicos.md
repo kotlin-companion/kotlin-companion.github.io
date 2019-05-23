@@ -1,21 +1,25 @@
 Em Kotlin, tudo é objeto no sentido de que qualquer variável possui propriedades e métodos. 
-Alguns tipos podem ter uma representação interna especial - por exemplo, números, caracteres e booleanos podem ser representados como valores primitivos em tempo de execução, mas para o usuário eles parecem com classes comuns. Nesta seção, descrevemos os tipos básicos usados ​​no Kotlin: números, caracteres, booleanos, matrizes e strings.
+Nesta seção, descrevemos os tipos básicos usados ​​no Kotlin: números, caracteres, booleanos, matrizes e strings.
 ###Números
-Kotlin manipula os números de maneira muito semelhante a do Java, a principal diferença é que todos os tipos são objetos, como já tido acima.
+Kotlin manipula os números de maneira muito semelhante a do Java, e possuem tamanhos limitados, esses limites dependem da quantidade de bits que cada tipo númerico oculpa em memória.
 O Kotlin fornece os seguintes tipos que representam números:
 
-|Tipo    |Bit|
-| -------|:--|
-| Double |64 |
-| Float  |32 |
-| Long   |64 |
-| Int    |32 |
-| Short  |16 |
-| Byte   |8  |
+|Tipo    |Bit|Valor Minimo        |Valor Máximo        |
+| -------|:--|:-------------------|:-------------------|
+| Long   |64 |-9223372036854775808|9223372036854775807 |
+| Int    |32 |-2147483648         |2147483647          |
+| Short  |16 |-32768              |32767               |
+| Byte   |8  |-128                |127                 |
+
+Os números de ponto flutuante vêm em dois tipos, dependendo de quantos dígitos você precisa. Se você precisar de maior precisão ou trabalhar com quantias monetárias (ou outras situações em que você deve ter resultados exatos), use o tipo não primitivo BigDecimal.
+
+|Tipo    |Bit| Observações                   |
+| -------|:--|:------------------------------|
+| Double |64 | 16-17 dígitos significativos  |
+| Float  |32 | 6-7 dígitos significativos    |
 
 
-####Underline em váriaveis númericas 
-
+####Underline
 Podemos usar _underline_ para tornar os valores numéricos mais legíveis.
 <script src="https://gist.github.com/leoallvez/4d84fe66d410e68837efc59788580599.js"></script>
 
@@ -37,10 +41,34 @@ Cada tipo de númerico suporta os seguintes os metódos conversão.
 - toDouble (): Double
 - toChar (): Char
 
+###Char
+Char não podem ser tratados diretamente como números.
+<script src="https://gist.github.com/leoallvez/d99b56c8cffc250e7d6bc756c0f35375.js"></script>
+Porém, podemos converter explicitamente um char em um número inteiro.
+<script src="https://gist.github.com/leoallvez/1fc5e1bd9587752f31ea7400d494d673.js"></script>
+<!--
 Em Kotlin, o sistema de tipos distingue entre referências que podem conter nulas ou não. Uma variável ou propriedade não podem conter valor nulo por default.
 <script src="https://gist.github.com/leoallvez/c52359fabad8c240a9a1f9c836b150c3.js"></script>
 Para permitir valores nulos, nós devemos declarar a variável como _nullable_ explicitamente.
 <script src="https://gist.github.com/leoallvez/ee132bc32f439d665c27e48e987dfe18.js"></script>
+-->
+###Booleans
+Tipos booleanos são definidos como Boolean, e podem ter apenas dois valores true (verdadeiro) ou false(falso) da qual podemos execultar as seguintes operações lógicas.
+
+####Operações lógicas
+
+|Operação|Operador|
+| -------|:-------|
+| E      | &&     |
+| OU     | II     |
+| Não    | !      |
+
+####Metodos da classe Boolean.
+A classe Boolean possui métodos para essas operações, o que tornam a sintax ainda mais legivel.
+<script src="https://gist.github.com/leoallvez/ca7aa4a97250c8d1a141d58ccd0da68e.js"></script>
+
+
+###Arrays
 
 ###Strings
 Strings são comparadas com o operador **==** que verificar a sua igualdade estrutural.

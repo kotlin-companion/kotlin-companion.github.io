@@ -21,6 +21,11 @@ Kotlin combina os paradigmas de orientação a objetos e programação funcional
 
 ### Concisa
 Pois em relação ao Java temos uma redução significativa na quantidade e legibilidade de código.
+Kotlin tem muito menos _boilerplate code_ do que o Java. 
+
+!!! info "Boilerplate code"
+    _Boilerplate_ é um termo muito utilizado para se referir a trechos de documentos (por exemplo jurídicos) que são sempre os mesmos, de documento pra documento, de modo que não acrescentam muita coisa mas mesmo assim não podem ser omitidos. Você já deve ter visto em licenças de software, por exemplo, a parte que diz que "NÃO HÁ NENHUMA GARANTIA PARA O PROGRAMA, NO LIMITE PERMITIDO PELA LEI APLICÁVEL. EXCETO QUANDO..." etc. Todo mundo já conhece, ninguém nem lê porque já sabe de cor o que está escrito, mas o documento não estaria completo sem ela.
+
 Exemplo, imagine uma classe chamada livro com apenas dois atributos, autor e título, em Java ela ficaria assim:
 
 <script src="https://gist.github.com/leoallvez/80581e58a4441069c59649d13a939cdc.js"></script>
