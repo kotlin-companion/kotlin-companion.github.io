@@ -1,8 +1,8 @@
 Em Kotlin, tudo é objeto no sentido de que qualquer variável possui propriedades e métodos. 
 Nesta seção, descrevemos os tipos básicos usados ​​no Kotlin: números, caracteres, booleanos, matrizes e strings.
 ###Números
-Kotlin manipula os números de maneira muito semelhante a do Java, e possuem tamanhos limitados, esses limites dependem da quantidade de bits que cada tipo númerico oculpa em memória.
-O Kotlin fornece os seguintes tipos que representam números:
+Kotlin manipula os números de maneira muito semelhante ao Java, usuando os mesmos tipos primitivos porém encapsulados dentro de uma classe chamada Number, eles possuem tamanhos limitados que dependem da quantidade de bits que cada tipo primitivo pode ocupa em memória.
+O Kotlin fornece os seguintes tipos que representam números
 
 |Tipo    |Bit|Valor Minimo        |Valor Máximo        |
 | -------|:--|:-------------------|:-------------------|
@@ -18,7 +18,6 @@ Os números de ponto flutuante vêm em dois tipos, dependendo de quantos dígito
 | Double |64 | 16-17 dígitos significativos  |
 | Float  |32 | 6-7 dígitos significativos    |
 
-
 ####Underline
 Podemos usar _underline_ para tornar os valores numéricos mais legíveis.
 <script src="https://gist.github.com/leoallvez/4d84fe66d410e68837efc59788580599.js"></script>
@@ -31,7 +30,7 @@ Tipo menores **não** são implicitamente convertidos em tipos maiores. Isso sig
 Podemos usar conversões explícitas para ampliar os números
 <script src="https://gist.github.com/leoallvez/4a11f3e3f1e16e4dc0a25136cd157f32.js"></script>
 
-Cada tipo de númerico suporta os seguintes os metódos conversão.
+Todas as classes númericas de Kotlin herdam da super classe Number, e todas as classes filhas de Number os herdam os seguintes metódos conversão.
 
 - toByte (): Byte
 - toShort (): Short
