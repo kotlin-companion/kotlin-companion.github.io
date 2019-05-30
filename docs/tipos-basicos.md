@@ -1,8 +1,7 @@
 Em Kotlin, tudo é objeto no sentido de que qualquer variável possui propriedades e métodos. 
 Nesta seção, descrevemos os tipos básicos usados ​​no Kotlin: números, caracteres, booleanos, matrizes e strings.
 ###Números
-Kotlin manipula os números de maneira muito semelhante ao Java, usuando os mesmos tipos primitivos porém encapsulados dentro de uma classe chamada Number, eles possuem tamanhos limitados que dependem da quantidade de bits que cada tipo primitivo pode ocupar em memória.
-O Kotlin fornece os seguintes tipos que representam números
+Kotlin manipula os números de maneira muito semelhante ao Java, usando os mesmos tipos primitivos, porém encapsulados dentro de uma classe chamada Number, eles possuem tamanhos limitados que dependem da quantidade de bits que cada tipo primitivo pode ocupar em memória. O Kotlin fornece os seguintes tipos que representam números.
 
 |Tipo    |Bit|Valor Mínimo        |Valor Máximo        |
 | -------|:--|:-------------------|:-------------------|
@@ -30,7 +29,8 @@ Tipo menores **não** são implicitamente convertidos em tipos maiores. Isso sig
 Podemos usar conversões explícitas para ampliar os números
 <script src="https://gist.github.com/leoallvez/4a11f3e3f1e16e4dc0a25136cd157f32.js"></script>
 
-Todas as classes númericas de Kotlin herdam da super classe Number, e todas as classes filhas de Number os herdam os seguintes metódos conversão númerica
+Todas as classes numéricas de Kotlin herdam da super classe Number, e todas as classes filhas de Number
+os herdam os seguintes métodos conversão numérica.
 
 - toByte (): Byte
 - toShort (): Short
@@ -43,7 +43,7 @@ Todas as classes númericas de Kotlin herdam da super classe Number, e todas as 
 ###Char
 Char não podem ser tratados diretamente como números.
 <script src="https://gist.github.com/leoallvez/d99b56c8cffc250e7d6bc756c0f35375.js"></script>
-Porém, podemos converter explicitamente um char em um número inteiro.
+Porém, podemos converter explicitamente um Charem um número inteiro.
 <script src="https://gist.github.com/leoallvez/1fc5e1bd9587752f31ea7400d494d673.js"></script>
 <!--
 Em Kotlin, o sistema de tipos distingue entre referências que podem conter nulas ou não. Uma variável ou propriedade não podem conter valor nulo por default.
@@ -52,7 +52,8 @@ Para permitir valores nulos, nós devemos declarar a variável como _nullable_ e
 <script src="https://gist.github.com/leoallvez/ee132bc32f439d665c27e48e987dfe18.js"></script>
 -->
 ###Booleans
-Tipos booleanos são definidos como Boolean, e podem ter apenas dois valores true (verdadeiro) ou false(falso) da qual podemos execultar as seguintes operações lógicas.
+Tipos booleanos são definidos como Boolean, e podem ter apenas dois valores true (verdadeiro) ou false
+(falso) da qual podemos executar as seguintes operações lógicas.
 
 ####Operações lógicas
 
@@ -63,7 +64,7 @@ Tipos booleanos são definidos como Boolean, e podem ter apenas dois valores tru
 | Não    | !      |
 
 ####Métodos da classe Boolean.
-A classe Boolean possui métodos para essas operações, o que tornam a sintax mais legível.
+A classe Boolean possui métodos para essas operações, o que tornam a sintaxe mais legível.
 <script src="https://gist.github.com/leoallvez/ca7aa4a97250c8d1a141d58ccd0da68e.js"></script>
 
 ###Arrays
@@ -81,12 +82,11 @@ Já o operador **===** verifica igualdade referencial e **!==** é a sua contra 
 !!! note "Nota"
     Para valores que são representados como tipos primitivos no tempo de execução (por exemplo, o tipo Int), a verificação da igualdade **===** é equivalente à verificação **==** de verificação.
 
-Strings são um conjutos de caracteres que podem ser acessados ​​por index.
+Strings são um conjuntos de caracteres que podem ser acessados ​​por um index.
 <script src="https://gist.github.com/leoallvez/0667ee05a395e270e3698d58ba36398c.js"></script>
-Os elementos de uma string podem ser iterados em um loop.
+Os elementos de uma string podem ser iterados num loop.
 <script src="https://gist.github.com/leoallvez/a931f839e7c191d1540bd3817d0918ac.js"></script>
-Template é um pedaço de código que é avaliado e seu resultado é concatenado em uma string. 
-Começa com um sinal de dólar **$** e consiste em um nome variável.
+Template é um pedaço de código que é avaliado e o seu resultado é concatenado em uma string. Começa com um sinal de dólar **$** e consiste em um nome de variável.
 <script src="https://gist.github.com/leoallvez/ec02fabc2f4b5012fa6c0bdb629d9a47.js"></script> 
 Para acessar valores de propriedade ou métodos de objetos devemos usar chaves.
 <script src="https://gist.github.com/leoallvez/2b37c9facb9a705f8a4fa51b6db16af8.js"></script>
